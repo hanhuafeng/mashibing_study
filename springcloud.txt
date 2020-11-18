@@ -1,0 +1,28 @@
+soap -> webservice
+websocket   tcp->http->soap
+tcp->(http -> soap){xml,xsd}
+tcp（安全可靠） -> http(json) 优点：不检查格式，数据包小
+
+
+微服务-》粒度（解耦合）
+
+
+netflix公司共享了自己封装的springcloud
+
+
+一致性（Consistency）、可用性（Availability）、分区容错性（Partition tolerance）
+
+双份投入，一份滋味（hytrix的弊端）
+申请两份线程，只拿到了一份结果
+
+优化：setinel
+
+
+@RefreshScope：可重新加载配置
+SpringCloud
+bootstrap.yml
+初始化配置中心的客户端（阻塞）
+其他配置加载
+（Tomcat/netty的端口号）
+
+nacos配置下发
